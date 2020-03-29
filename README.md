@@ -23,17 +23,17 @@ Author: Michele Bertoni
 	* Download [Java](https://www.java.com/it/download/manual.jsp) for Linux x64
 	* Open BUW
 	* Browse the download directory (it should be ```cd Downloads```)
-	* From now on, I will consider jre version 8u171, if yours is different, please edit the following commands
+	* From now on, I will consider jre version ```8u241```, if yours is different, please edit the following commands
 	* Create the installation directory ```sudo mkdir /usr/java```
-	* Move the .tar.gz to the installation directory: ```sudo mv jre-8u171-linux-x64.tar.gz /usr/java/jre-8u171-linux-x64.tar.gz```
-	* Install ```sudo tar zxvf jre-8u171-x64.tar.gz```
-	* Remove .tar.gz ```sudo rm jre-8u171-linux-x64.tar.gz```
+	* Move the .tar.gz to the installation directory: ```sudo mv jre-8u241-linux-x64.tar.gz /usr/java/jre-8u241-linux-x64.tar.gz```
+	* Install ```sudo tar zxvf jre-8u241-x64.tar.gz```
+	* Remove .tar.gz ```sudo rm jre-8u241-linux-x64.tar.gz```
 	* Move to Home directory ```cd```
 	* Open .bashrc ```nano .bashrc```
 	* Add the following lines of code at the end of the file (please remind to eventually change jre directory name):
 		```
 		# java
-		export JAVA_HOME=/usr/java/jre1.8.0_171
+		export JAVA_HOME=/usr/java/jre1.8.0_241
 		export PATH=${PATH}:${JAVA_HOME}/bin
 		```
 	* Save changes and close the text editor

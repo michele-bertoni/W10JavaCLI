@@ -1,4 +1,4 @@
-# Installation guide
+# Installation guide(win Only)
 Author: Michele Bertoni
 
 1. ## Clone repository

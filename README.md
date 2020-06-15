@@ -30,7 +30,7 @@ Author: Michele Bertoni
 	* Remove .tar.gz ```sudo rm jdk-14.0.1_linux-x64_bin.tar.gz```
 	* Move to Home directory ```cd```
 	* Open .bashrc ```nano .bashrc```
-	* Add the following lines of code at the end of the file (please remind to eventually change jre directory name):
+	* Add the following lines of code at the end of the file (please remind to eventually change jdk directory name):
 		```
 		# java
 		export JAVA_HOME=/usr/java/jdk-14.0.1

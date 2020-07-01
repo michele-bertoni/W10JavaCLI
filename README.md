@@ -7,12 +7,12 @@ Author: Michele Bertoni
 
 2. ## Install Bash on Ubuntu on Windows (BUW)
 	* Open Windows PowerShell as Administrator by pressing ```WINDOWS + X``` and then selecting the correct voice
-	* Enable the "Windows subsystem for Linux" by running ```Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux```
+	* Enable the "Windows subsystem for Linux" (WSL) by running ```Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux```
 	* Reboot when asked
 	* Install [Ubuntu from Microsoft Store](https://www.microsoft.com/store/p/ubuntu/9nblggh4msv6)
 	* Launch the application and set username and password
 
-3. ## Configure BUW
+3. ## Configure WSL
 	* Move Ubuntu.lnk on the Desktop
 	* Right click on the link, Properties
 	* Add your profile name after ```C:\Users\``` (e.g. ```C:\Users\michele```)
@@ -21,7 +21,7 @@ Author: Michele Bertoni
 
 4. ## Install Java
 	* Download [Java](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html) for Linux Compressed Archive (linux-x64_bin.tar.gz)	
-	* Open BUW
+	* Open WSL
 	* Browse the download directory (it should be ```cd /mnt/c/Users/username/Downloads```)
 	* From now on, I will consider jdk version ```14.0.1```, if yours is different, please edit the following commands
 	* Create the installation directory ```sudo mkdir /usr/java```
@@ -37,11 +37,11 @@ Author: Michele Bertoni
 		export PATH=${PATH}:${JAVA_HOME}/bin
 		```
 	* Save changes and close the text editor
-	* Close BUW
+	* Close WSL
 
 5. ## Configure correct font
 	* Install on Windows the font ```DejaVu Sans Mono for Powerline.ttf``` by double-clicking it and selecting install (the file is included in the font directory of this repository)
-	* Open BUW, then right-click the upper header and select Properties
+	* Open WSL, then right-click the upper header and select Properties
 	* Select ```DejaVu Sans Mono for Powerline``` in the Font tab, then apply
 	* Repeat this also for Default properties
 	* You can also set the same font for IntelliJ IDEA console for easier debugging
@@ -51,3 +51,6 @@ Author: Michele Bertoni
 	* You should see an auto-solving Hanoi Tower, full colored, where the disks are composed by dice characters
 	* If everything is right, the configuration is done
 	* You can get inspiration from this test when making the final deployment of your java application
+	
+7. ## GUI (Optional)
+	JavaFX or Swing application won't work on WSL and should be launched from Windows Shell. However, if you prefer having the entire application start from WSL, you can follow [this sub-guide](https://github.com/michele-bertoni/W10JavaCLI/blob/master/GuiForWSL.md)
